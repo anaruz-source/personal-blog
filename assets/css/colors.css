@@ -1,0 +1,55 @@
+/* colors names by http://chir.ag/projects/name-that-color/#46C546 */
+
+.cardinal {
+
+    color:  #c51846;
+}
+
+.lima {
+
+    color: #46c518;
+}
+
+.persian-blue {
+
+    color: #1846c5;
+}
+
+.silver {
+
+    color: #bbb;
+}
+
+.white {
+
+    color: white;
+}
+
+.grey {
+
+    color: #808080;
+}
+
+.black {
+
+    color: black;
+}
+.magenta {
+
+    color: magenta;
+}
+
+.border-top-mag {
+
+    border-top-color: magenta;
+}
+
+.border-top-persian {
+
+    border-top-color: #1846c5;
+}
+
+.border-top-lima {
+
+    border-top-color: #46C518;
+}

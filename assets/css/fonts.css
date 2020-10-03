@@ -1,0 +1,40 @@
+/* Fonts from fonts.google.com
+   conversions ensured by https://www.font-converter.net/en;
+*/
+@font-face {
+  font-family: "Lato Regular";
+
+  src: url("fonts/Lato-Regular.otf") format("opentype"),
+    url("fonts/Lato-Regular.svg") format("svg"),
+    url("fonts/Lato-Regular.ttf") format("truetype"),
+    url("fonts/Lato-Regular.woff") format("woff"),
+    url("fonts/Lato-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Oswald Regular";
+  src: url("fonts/Oswald-Regular.otf") format("opentype"),
+    url("fonts/Oswald-Regular.svg") format("svg"),
+    url("fonts/Oswald-Regular.ttf") format("truetype"),
+    url("fonts/Oswald-Regular.woff") format("woff"),
+    url("fonts/Oswald-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: "Lato Light";
+
+  src: url("fonts/Lato-Light.otf") format("opentype"),
+    url("fonts/Lato-Light.svg") format("svg"),
+    url("fonts/Lato-Light.ttf") format("truetype"),
+    url("fonts/Lato-Light.woff") format("woff"),
+    url("fonts/Lato-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

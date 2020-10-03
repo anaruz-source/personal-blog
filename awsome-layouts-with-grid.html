@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Design awesome layouts with grid</title>
+</head>
+
+<body>
+    <header class="header disp-f">
+        <div class="logo"><a href="index.html"><img src="assets/images/logo_3.svg" alt="logo FrontEnd"></a></div>
+        <nav class="nav-bar cardinal ">
+            <div> <a href="index.html">Home</a></div>
+            <div> <a href="#">Sign In</a></div>
+            <div title="click to subscribe"> <a href="#sub">Subscribe</a></div>
+            <form action="" method="POST">
+                <div class="search-bar disp-f"> <img src="assets/images/magnifier.svg" alt="search bar"> <input
+                        type="text" placeholder="keyword to search...."></div>
+            </form>
+        </nav>
+        <div class="menu-bars">
+            <div class="big-bar"></div>
+            <div class="small-bar"></div>
+            <div class="big-bar"></div>
+        </div>
+    </header>
+    <div class="gap-filler disp-f"></div>
+    <div class="decoration disp-f main-axis-center sec-axis-center">
+        <h1 class="center white pos-rel"> Onboard, a FREE ticket to the IT world</h1>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </div>
+    <main class="global-container">
+        <section class="article-container">
+            <header>
+                <div class="magenta">Design with CSS</div>
+                <h2 class="black">Design awesome layouts with CSS grid</h2>
+                <h3 class="m-bottom grey">All you need to code a mobile friendly layouts</h3>
+            </header>
+            <div class="disp-f main-axis-center dir-col">
+                <div class="disp-f author">
+                    <img src="assets/images/bio.jpeg" alt="bio images" class="img">
+                    <div class="disp-f dir-col">
+                        <h4 class="grey capitalize">anaruz tanwurdi</h4>
+                        <time class="silver">Sep 14th, 2020. 5min read</time>
+                        <div class="stars">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/star.svg" alt="">
+                            <img src="assets/images/half-star.svg" alt="">
+                        </div>
+                        <div class="socials disp-f">
+                            <img src="assets/images/facebook.svg" alt="">
+                            <img src="assets/images/github.svg" alt="">
+                            <img src="assets/images/linkedin.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article>
+                <p>Unlike CSS Flexbox, a one dimensional CSS Layout, <em><u>Grid Layout</u></em> unlocks the power of
+                    CSS lay down
+                    elements in a nearly pixel-perfect designs. Similarly to tables, CSS grid has Columns and rows.
+                    However,
+                    more
+                    css grid layouts are possible and easier than what was possible with previous positionning layouts.
+                </p>
+                <p>It splits page into regions, defines control parts built of HTML primitives elements</p>
+                <p>This article wouldn't be possible without the following resources:</p>
+                <ul>
+                    <li><a href="https://medium.com/sketch-app-sources/understanding-css-grid-ce92b7aa67cb"
+                            title="medium">Understanding CSS Grid</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+                            title="mdn documentation">CSS
+                            Grid Layout</a>
+                    </li>
+                    <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" title="css-tricks.com">A
+                            Complete
+                            Guide to Grid</a>
+                    </li>
+                    <li><a href="https://www.w3schools.com/cssref/pr_gen_counter-reset.asp" title="w3schools.com">CSS
+                            counter-reset Property</a>
+                    </li>
+                </ul>
+                <h3 class="m-top grey">CSS Grid basics</h3>
+                <p>Let's start with the HTML example below</p>
+                <div class="code-container">
+                    <code>
+                            <div class="line-container">&lt;div class="<span class="lima">container</span>"&gt;</div>
+                            <div class="line">&lt;div class="<span class="lima">box box-1</span>"&gt; Box-1 &lt;/div&gt</div>
+                            <div class="line">&lt;div class="<span class="lima">box box-2</span>"&gt; Box-2 &lt;/div&gt</div>
+                            <div class="line">&lt;div class="<span class="lima">box box-3</span>"&gt; Box-3 &lt;/div&gt</div>
+                            <div class="line">&lt;div class="<span class="lima">box box-4</span>"&gt; Box-4 &lt;/div&gt</div>
+                            <div class="line-container">&lt;/div&gt;</div>
+                    </code>
+                </div>
+                <h3 class="m-top grey">Four Columns and one row</h3>
+                <p>To enable grid layout, use <em><u>display: grid;</u></em> as a property of a
+                    <em><u>container</u></em>
+                    as below. Each column has a width of 25% of the available space.
+                    gap between columns could be added with <em><u>rid-column-gap</u></em> property.
+                <div class="code-container">
+                    <code>
+                            <div class="line-container">.container {</div>
+                            <div class="line"><span class="cardinal">display</span>: <span class="lima"> grid</span>;</div>
+                            <div class="line"><span class="cardinal">grid-template-columns</span>: <span class="lima"> 25% 25% 25%
+                                25%</span> ;<span class="grey"> /* 4 columns taking 25% width each. could be replaced
+                                with<strong> repeat(4, 20%)</strong> */</span>
+                            </div>
+                            <div class="line"><span class="cardinal">grid-template-rows</span>: <span class="lima">100px</span>;<span class="grey"></span>
+                                /* one row of 100px height */</span>
+                            </div>
+                            <div class="line-container">}</div>
+                    </code>
+                </div>
+                <p>Property values could be in px, %, em, rem or fr (fractional Unit, used to divide
+                    available space into fractions to meet the needs). similary we could replace each 25% in this
+                    example
+                    with 1fr as in the
+                    code exhibit below:
+                </p>
+                </p>
+                <div class="code-container">
+                    <code>
+                            <div class="line-container">.container {</div>
+                            <div class="line"><span class="cardinal">display</span>: <span class="lima"> grid</span>;</div>
+                            <div class="line"><mark><span class="cardinal">grid-template-columns</span>: <span class="lima"> 1fr 1f
+                                1fr 1fr</span> ;</mark>
+                            </div>
+                            <div class="line-container">}</div>
+                    </code>
+                </div>
+                <figure>
+                    <img src="assets/images/four-cols-one-row.svg" alt="css grid four cols one row">
+                    <figcaption class="grey"> css grid four cols one row</figcaption>
+                </figure>
+                <h3 class="m-top grey">Four rows one row (adding gutter)</h3>
+                <div class="code-container">
+                    <code>
+                            <div class="line-container">.container {</div>
+                            <div class="line"><span class="cardinal">display</span>: <span class="lima"> grid</span>;</div>
+                            <div class="line"><span class="cardinal">grid-template-rows</span>: <span class="lima"> 100px 100px
+                                100px 100%</span> ;<span class="grey"> /* 4 rows taking 100px height each. could be replaced
+                                with <strong>repeat(4, 100px)</strong> */</span>
+                            </div>
+                            <div class="line"><span class="cardinal">grid-template-columns</span>: <span class="lima">
+                                100px</span>;<span class="grey"> /* one row of 100% width */</span>
+                            </div>
+                            <div class="line"><mark><span class="cardinal"> grid-row-gap</span>: <span class="lima">
+                                10px</span>;</mark><span class="grey"> /* a row gap of 10px between each 2 rows*/</span>
+                            </div>
+                            <div class="line-container">}</div>
+                    </code>
+                </div>
+                <figure>
+                    <img src="assets/images/one-col-four-rows.svg" alt="css grid four cols one row">
+                    <figcaption class="grey">css grid four cols one row</figcaption>
+                </figure>
+                <h3 class="m-top grey">Mixing it up together (Two x Two layout)</h3>
+                <div class="code-container">
+                    <code>
+                            <div class="line-container">.container {</div>
+                            <div class="line"><span class="cardinal">display</span>: <span class="lima"> grid</span>;</div>
+                            <div class="line"><span class="cardinal">grid-template-rows</span>: <span class="lima"> 100px
+                                100px</span> ;
+                            </div>
+                            <div class="line"><span class="cardinal">grid-template-columns</span>: <span class="lima">48%
+                                48%</span>;
+                            </div>
+                            <div class="line"><span class="cardinal"> grid-gap</span>: <span class="lima">10px 4%</span>;</div>
+                            <div class="line-container">}</div>
+                    </code>
+                </div>
+                <figure>
+                    <img src="assets/images/two-cols-two-rows.svg" alt="css grid four cols one row">
+                    <figcaption class="grey">css grid four cols one row</figcaption>
+                </figure>
+                <h3 class="m-top grey">Rearranging items using the power of grid lines</h3>
+                <figure>
+                    <img src="assets/images/grid-lines.svg" alt="grid lines">
+                    <figcaption class="grey">grid lines</figcaption>
+                </figure>
+                <p>CSS grid is made of grid lines, horizontal and vertical lines. They are numbered from left to right
+                    and
+                    from top to bottom, starting from 1. the power of grid lines resides in their ability to lay items
+                    out
+                    thanks to these concepts:
+                </p>
+                <p><em><strong>A Cell </strong></em> made of two adjacent column grid lines and two adjacent row ones.
+                </p>
+                <p><em><strong>An area </strong></em> is made multiple cells surrounded by four grid lines. </p>
+                <p><em><strong>A track </strong></em> is linear cells made of two adjacent column or row grid lines.
+                </p>
+                <h3 class="m-top grey">CSS grid Browser support</h3>
+                <figure>
+                    <img src="assets/images/caniuse-css-grid-status-septemeber-2020_2.png"
+                        alt=" css grid caniuse status September 2020">
+                    <figcaption class="grey">css grid caniuse.com status m-toptember 2020</figcaption>
+                </figure>
+                <h3 class="m-top grey">Take away</h3>
+                <p>I will write one later on....</p>
+            </article>
+        </section>
+        <section class="main-container">
+            <h3 class="grey">Articles that might interest you</h3>
+            <hr>
+            <div class="cards-container">
+                <div class="card border-top-lima">
+                    <div class="category  lima">JavaScript</div>
+                    <h3>ES5 to ES6 a smooth transition</h3>
+                    <div class="silver">Nov 12</div>
+                    <p>This card represents an example of a Lorem Ipsum blog post</p>
+                    <hr>
+                    <div class="card-ft btn silver"><a href="#">Continue reading +</a></div>
+                </div>
+                <div class="card border-top-mag">
+                    <div class="category  magenta">Design</div>
+                    <h3>Flexbox: an utlimate guide</h3>
+                    <div class="silver">Nov 12</div>
+                    <p>This card represents an example of a Lorem Ipsum blog post</p>
+                    <hr>
+                    <div class="card-ft btn"><a href="#">Continue reading +</a></div>
+                </div>
+                <div class="card border-top-persian">
+                    <div class="category   persian-blue">SEO</div>
+                    <h3>SEO: beyond technical</h3>
+                    <div class="silver">Nov 12</div>
+                    <p>This card represents an example of a Lorem Ipsum blog post</p>
+                    <hr>
+                    <div class="card-ft btn"><a href="#">Continue reading +</a></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="main-container">
+                <h2>Biography</h2>
+                <div class="blog-owner-area">
+                    <div class="profile disp-f">
+                        <img src="assets/images/bio.jpeg" alt="bio images" class="img">
+                        <div class="disp-f dir-col main-axis-center">
+                            <h4 class="grey capitalize">anaruz tanwurdi</h4>
+                            <div class="socials">
+                                <img src="assets/images/facebook.svg" alt="">
+                                <img src="assets/images/github.svg" alt="">
+                                <img src="assets/images/linkedin.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <h5> about me </h5>
+                        <p>Frontend web developer/technophile freelancer.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container" id="sub">
+            <div class="contact-info disp-f sec-axis-center">
+                <div class="logo"><img src="assets/images/logo_3.svg" alt="logo FrontEnd"></div>
+                <div class="contacts">
+                    <div class="disp-f sec-axis-center cnt-elem"><img src="assets/images/addresse.svg" alt=""><span>Black
+                            mountain, BOX.
+                            15666. Hanover</span>
+                    </div>
+                    <div class="disp-f sec-axis-center cnt-elem"><img src="assets/images/phone.svg" alt=""><span>+1 8999
+                            000000</span>
+                    </div>
+                    <div class="disp-f sec-axis-center cnt-elem"><img src="assets/images/email.svg"
+                            alt=""><span>getintouch@company.com</span></div>
+                </div>
+            </div>
+            <div class="disp-f form-container main-axis-center">
+                <form action="" method="POST" class="subscribe-form">
+                    <div class="subscribe disp-f sec-axis-center"><span>Subscribe</span><img
+                            src="assets/images/arrow-r.svg" alt="" class="arrow-r"> </div>
+                    <div><input type="text" placeholder="first name"></div>
+                    <div><input type="text" placeholder="last name"></div>
+                    <div><input type="email" placeholder="@yourmail"></div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+        </div>
+        <p class="copy center grey">Anaruz &copy; 2020</p>
+    </footer>
+</body>
+
+</html>

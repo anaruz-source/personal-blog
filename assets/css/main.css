@@ -69,7 +69,6 @@ code {
     height: 6em;
     padding: 1em;
     align-items: center;
-    position: fixed;
     z-index: 10;
     background:white;
 }
@@ -480,6 +479,7 @@ ul li a {
     width: 250px;
     border-radius: 21px;
     height: 40px;
+    overflow: hidden;
 
 }
 
